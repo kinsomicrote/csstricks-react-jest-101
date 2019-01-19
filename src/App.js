@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <div className="container">
-          <h2>Random User</h2>
+          <h2>CSSTricks Tests</h2>
           <div className="row">
             {!isLoading ? (
               users.map(user => {
