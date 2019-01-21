@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Profile from './Profile';
 
+const Hello = () => (
+  <div>
+    <h2>Welcome on board!</h2>
+  </div>
+)
+
 class App extends Component {
   state = {
     users: [],
@@ -50,6 +56,7 @@ class App extends Component {
             )}
           </div>
         </div>
+        <Hello />
       </React.Fragment>
     );
   }
