@@ -10,13 +10,13 @@ const user = {
 }
 
 describe ('<Profile />', () => {
-    it ('accepts user props', () => {
+    it ('contains h4', () => {
         const wrapper = mount(<Profile user={user} />)
         const value = wrapper.find('h4').text()
         expect(value).toEqual('John Doe')
     })
 
-    it ('works', () => {
+    it ('accepts user props', () => {
         const wrapper = mount(<Profile user={user} />);
         expect(wrapper.props().user).toEqual(user)
     })
