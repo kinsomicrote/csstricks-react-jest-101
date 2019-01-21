@@ -8,7 +8,7 @@ const Profile = ({user}) => {
     return (
         <React.Fragment>
             <div key={user.username} className="card" style={cardWidth}>
-                <p>{user.name}</p>
+                <h4>{user.name}</h4>
                 <div>
                 <img src={user.image} alt={user.name} />
                 </div>
