@@ -18,4 +18,10 @@ describe('<App />', () => {
     
         expect(wrapper).toMatchSnapshot();
     });
+
+    it('calls componentDidMount', () => {
+        jest.spyOn(App.prototype, 'componentDidMount')
+        const wrapper = shallow(<App />)
+        expect(App.prototype.componentDidMount.mock.calls.length).toBe(1)
+    })
 })
